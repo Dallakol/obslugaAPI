@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        <title>Kursy walut</title>
+    </head>
+    <body>
+        <form method="post">
+            <label for="code">Wybierz walutę</label>
+            <select name="code">
+                {% for code in codes %}
+                <option>{{code}}</option>
+                {% endfor %}
+            </select>
+            <label for="amount">Podaj ilość:</label>
+            <input type="number" name="amount" min="1" step=".01">
+            <button type="submit">Sprawdź</button>
+        </form>
+    </body>

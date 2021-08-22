@@ -1,0 +1,32 @@
+input {
+    width: auto;
+    margin: 8px;
+    padding: 5px;
+    background-color: aqua;
+}
+
+select {
+    width: auto;
+    margin: 8;
+    padding: 5px;
+    background-color: aqua;   
+}
+
+label {
+    margin: 8;
+    padding: 5px;
+}
+
+button {
+    border-radius: 25%;
+    margin: 8;
+    padding: 5px;
+}
+
+button:hover {
+    background-color:rgb(255, 0, 234);
+}
+
+form {
+    background-color: rgba(128, 128, 128, 0.111);
+}
